@@ -114,10 +114,7 @@ header nav a:active {
   padding: 0em;
 }
 
-.about-section {
-  background-color: #000;
-  padding: 4em 2em;
-}
+
 
 /* AboutMe */
 .aboutMe {
@@ -262,6 +259,11 @@ span {
   color: #f6f6f6;
 }
 
+.skill-section{
+  background-color: #000;
+  padding: 4em 2em;
+}
+
 
 /* The highlights */
 
@@ -307,11 +309,6 @@ section img:hover {
 
 /* sectionImage Styling */
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
 
 /* Form Styling */
 .form--- {
@@ -354,7 +351,7 @@ form input {
   width: 100%; /* Adjusted to make it full width */
   max-width: 200px; /* Limit button size for larger screens */
   display: block;
-  margin: 2em auto 0 auto; /* Centered button */
+  margin: 2em auto ; /* Centered button */
 }
 
 .submit--btn:hover {
@@ -365,13 +362,7 @@ form input {
   box-shadow: 0 0 5px #38CFD9;
 }
 
-/* Optional: Adjust input styles for smaller screens */
-@media (max-width: 600px) {
-  form input, .submit--btn {
-    width: 100%;
-    padding: 8px;
-  }
-}
+
 
 /* * Footer Styles * */
 footer {
@@ -424,11 +415,50 @@ footer nav {
 
 /* Media Querry */
 
-@media screen and (max-width: 668px) {
-  section .sectionImage img {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+@media (max-width:760px) {
+  .highlights{
+    display: block;
+    width: 90%;
+   
+  }
+
+.highlights > * {
+  margin-bottom: 20px;
+}
+
+.highlights > * :last-child{
+  margin-bottom: 0;
+}
+
+}
+
+
+/* Optional: Adjust input styles for smaller screens */
+@media (max-width: 600px) {
+  
+  .submit--btn{
+    width: 40%;
+   position:relative;
+   background-color: rebeccapurple;
+  
 
   }
+ .btn--two{
+  margin: auto ;
+  
 }
+
+  .form input {
+    width: 60%;
+  }
+
+  .container--two{
+    margin: auto;
+  }
+
+  .form__label_name{
+    display: block;
+  }
+}
+
+

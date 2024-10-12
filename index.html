@@ -21,7 +21,7 @@
     <h1>Simon Azike </h1>
     <h4 class="brief-description">Creating modern and responsive websites with a focus on user experience
     </h4>
-    </h1>
+
     <div class="title">
       <p>Web Developer | Designer | Tech Enthusiast</p>
       <a href="#project"><button>View My Work</button></a>
@@ -36,6 +36,7 @@
         <li><a href="#aboutMe">About</a></li>
         <li><a href="#project">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
     </nav>
@@ -50,11 +51,12 @@
     <section id="aboutMe">
       <div class="aboutMe">
         <h1>About Me</h1>
-        <h2>I am Azike Simon A.K.A <span>SamzikTech...</span>
+        <h2>I am Azike Simon <span>also known as SamzikTech</span>
         </h2>
         <p>
-          I am a web developer with a passion for creating modern and responsive websites that provide a seamless user
-          experience for potential clients!
+          I'm a passionate web developer dedicated to building modern, responsive websites that offer seamless user experiences. My goal is to help clients establish a strong online presence through clean, efficient, and user-centered design.
+
+
         </p>
       </div>
     </section>
@@ -63,7 +65,7 @@
     <section class="skill-section" id="skills">
       <div class="container">
         <div class="skill-statement">
-          <h2 class="skills-text project-text blog-text">My Skills</h2>
+          <h2 class="skills-text">My Skills</h2>
           <div class="highlights">
             <div class="highlight">
               <h3>Linux Administration</h3>
@@ -101,7 +103,7 @@
               <a href="https://extraordinary-hamster-8d0aa9.netlify.app/">
                 <i class="fa-brands fa-square-github fa-1xl gap"></i></a>
               <br>
-              A project Work by <b>CapacityBay</b> International.
+              A project developed by me at <b>CapacityBay International</b>.
             </div>
             <div class="highlight">
               <h3>EasyBank Website</h3>
@@ -109,7 +111,7 @@
               <a href="https://venerable-lily-a49440.netlify.app/">
                 <i class="fa-brands fa-square-github fa-1xl"></i></a>
               <br>
-              A project Work by <b>CapacityBay</b> International.
+              A project developed by me at <b>CapacityBay International</b>.
             </div>
             <div class="highlight">
               <h3>Contat Card</h3>
@@ -127,40 +129,42 @@
               <a href="https://lighthearted-elf-499bbc.netlify.app/">
                 <i class="fa-brands fa-square-github fa-1xl"></i></a>
               <br>
-              A project Work by <b>SamzikTech</b> Institute of webdesign.
+             A project developed by <b>SamzikTech Institute of Web Design</b>.
             </div>
           </div>
         </div>
     </section>
 
     <!-- Form -->
-    <section class="form---">
+    <section class="form---" id="contact">
       <div class="container--two">
         <h1 class="contact__form__text">Contact Me</h1>
-        <form action="" class="form">
+        <form action="https://formspree.io/f/mbljjjeb" method="POST" class="form">
           <ul class="input__form2">
             <!-- name -->
             <li>
               <label for="name" class="form__label_name">Your Name</label>
-              <input type="text" placeholder="Name" class="form__input" id="name" />
+              <input type="text" name="name" placeholder="Name" class="form__input" id="name" required />
             </li>
 
             <!-- email -->
             <li>
               <label for="email" class="form__label_name">Email</label>
-              <input type="email" placeholder="Email" class="form__input" id="email-input" />
+              <input type="email" name="email" placeholder="Email" class="form__input" id="email-input" required />
             </li>
 
             <!-- comments -->
             <li>
               <label for="comments" class="form__label_name">Comments</label>
-              <input type="text" placeholder="Comments" class="form__input-comments" id="comments" />
+              <input type="text" name="comments" placeholder="Comments" class="form__input-comments" id="comments"
+                required />
             </li>
 
             <!-- phone -->
             <li>
               <label for="phone" class="form__label_name">Phone</label>
-              <input type="number" placeholder="Phone" max="9999999999" class="form__input-comments" id="phone" />
+              <input type="number" name="phone" placeholder="Phone" max="9999999999" class="form__input-comments"
+                id="phone" />
             </li>
 
             <!-- social icons -->
@@ -168,17 +172,19 @@
               <a href="https://www.linkedin.com/in/simonzik/"><i class="fa-brands fa-linkedin fa-1xl"></i></a>
               <a href="https://www.youtube.com/@simonazike9944"><i class="fa-brands fa-youtube fa-1xl"></i></a>
               <a href="https://github.com/samzik234?tab=repositories"><i class="fa-brands fa-github fa-1xl"></i></a>
-            </div>
-
-            <!-- submit button -->
-             <div class="btn--two">
-              <button type="submit" class="submit--btn">Submit</button>
-             </div>
-           
           </ul>
-        </form>
+<!-- submit button -->
+<button type="submit" class="submit--btn">Submit</button>
 
       </div>
+
+      </form>
+       
+      </div>
+    </section>
+
+
+    </div>
     </section>
 
     <!-- foot -->
@@ -189,11 +195,10 @@
           <li><a href="#aboutMe">About</a></li>
           <li><a href="#project">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <p>Contact me at <i>
-          <a
-            style="background-color: blue; padding: 4px; color: beige; border-radius: 3em; font-weight:bold; text-decoration: none;">LinkedIn</a>
+      <p>Copy right@ 2024 SamziTech
       </p>
     </footer>
   </main>

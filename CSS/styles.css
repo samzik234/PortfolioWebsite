@@ -11,6 +11,12 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  background-image: url(../Assets/tech.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 10;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -33,8 +39,8 @@ body {
     text-align: center;
     padding: 10px;
     margin-bottom: 3em;
-    background-color: var(--background-color);
-    opacity: 1;
+    /* background-color: var(--background-color); */
+    opacity: 1.9;
     border-bottom-right-radius: 1em;
 
   }
@@ -99,28 +105,62 @@ body {
   }
 
   /* Icon styling */
-  .fa-brands.fa-linkedin.fa-1xl {
-    color: blue;
+  .fa-brands.fa-linkedin.fa-2xl {
+    color: var(--hover--color2);
     margin: 7px;
 
-  }
-
-  .fa-brands.fa-youtube.fa-1xl {
-    color: red;
-    margin: 7px;
-  }
-
-  .fa-brands.fa-github.fa-1xl {
-    color: black;
-    margin: 7px;
   }
 
   .icons {
     display: flex;
-
+    margin: 1em;
 
   }
 
+  .project-icons {
+    margin-top: 1em;
+  }
+
+  .fa-brands.fa-youtube.fa-2xl {
+    color: var(--hover--color2);
+    margin: 7px;
+  }
+
+  .fa-solid.fa-envelope.fa-2xl {
+    color: var(--hover--color2);
+    margin: 8px;
+  }
+
+  .fa-brands.fa-github.fa-2xl {
+    color: var(--hover--color2);
+    margin: 7px;
+  }
+
+
+
+  .fa-brands.fa-github.fa-2xl:hover {
+    transition: .6s;
+    padding: 5px;
+    color: var(--hoverbackground--color1);
+  }
+
+  .fa-brands.fa-linkedin.fa-2xl:hover {
+    transition: .6s;
+    padding: 5px;
+    color: var(--hoverbackground--color1);
+  }
+
+  .fa-brands.fa-youtube.fa-2xl:hover {
+    transition: .6s;
+    padding: 5px;
+    color: var(--hoverbackground--color1);
+  }
+
+  .fa-solid.fa-envelope.fa-2xl:hover {
+    transition: .6s;
+    padding: 5px;
+    color: var(--hoverbackground--color1);
+  }
 
 
   /* AboutMe */
@@ -131,6 +171,7 @@ body {
     margin-top: 3em;
     max-width: 765px;
     padding: 10px;
+    color: white;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
@@ -168,6 +209,10 @@ body {
     transform: scale(0.98);
   }
 
+  .title {
+    color: var(--secondary-color);
+  }
+
 
   p {
     padding: 5px;
@@ -196,6 +241,7 @@ body {
 
   h1 {
     font-size: 2rem;
+    color: var(--secondary-color);
   }
 
   h2 {
@@ -205,8 +251,12 @@ body {
     animation-duration: 4s;
   }
 
+  h4 {
+    color: var(--secondary-color);
+  }
+
   span {
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
 
@@ -235,12 +285,13 @@ body {
     font-size: 2rem;
     margin-top: 4em;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 1em;
   }
 
   .contact__form__text {
     text-align: center;
+    color: var(--primary-color)
   }
 
   /* SkillSection Styling */
@@ -264,7 +315,8 @@ body {
 
   .skill-section {
     background-color: var(--hoverbackground--color1);
-    padding: 4em 2em;
+    padding: 2em;
+    margin-right: 3rem 6rem;
   }
 
 
@@ -296,20 +348,14 @@ body {
   }
 
 
-  /* ProjectAnimation */
-
   img {
     border-radius: 1em;
   }
 
 
 
-
-
-
   /* Form Styling */
   .form--- {
-    background-color: var(--hoverbackground--color1);
     padding: 20px;
   }
 
@@ -349,7 +395,12 @@ body {
     width: 100%;
     max-width: 200px;
     display: block;
-    margin: 2em auto;
+    margin: 3em auto;
+
+  }
+
+  .form__label_name {
+    display: block;
   }
 
   .submit--btn:hover {
@@ -362,7 +413,7 @@ body {
 
 
 
-  /* * Footer Styles * */
+  /*  Footer Styles  */
   footer {
     background-color: var(--background-color);
     text-align: center;
@@ -406,17 +457,110 @@ body {
     bottom: 0;
     padding: 10px 0;
     z-index: 1000;
+  }
 
+
+  .contact-split {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
   }
 
 
 
-  /* Media Querry */
+  /* Hamburger Menu */
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 45px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+
+  /* Hamburger Bars */
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--secondary-color);
+    margin: 10px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-11px, -10px);
+  }
+
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  /* Mobile Nav Styling */
+  .mobile-nav {
+    width: 50%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: #020A31;
+    padding-top: 120px;
+    transition: 0.4s;
+    opacity: 0.8;
+
+  }
+
+  /* Mobile Anchor tag Styling */
+  .mobile-nav a {
+    max-width: 760px;
+    width: 30%;
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 1em;
+    text-align: center;
+    margin: auto;
+
+
+  }
+
+  .mobile-nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 1.4s;
+    padding: 5px;
+
+  }
+
+
+  .mobile-nav.is-active {
+    left: 0;
+  }
+
+
+
+  /* Media Querry Highlight Containers */
 
   @media (max-width:760px) {
     .highlights {
       display: block;
-      width: 90%;
+      width: 296px;
+    margin: auto;
+
 
     }
 
@@ -428,31 +572,80 @@ body {
       margin-bottom: 0;
     }
 
+    .highlight {
+      width: 87%;
+
+    }
+
+    .skill-section {
+      width: 87%;
+      margin-right: 9em;
+
+
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+
   }
 
 
-  /* Media Query */
-  @media (max-width: 600px) {
+  /* Media Query  Form/Header*/
+  @media (max-width: 758px) {
+
     .submit--btn {
-      width: 60%;
-      /* Adjust width as needed */
+      width: 100%;
       margin: 2em auto;
-      /* This centers the button horizontally */
-      background-color: rebeccapurple;
-      /* Optional: Change background color */
+      background-color: var(--hoverbackground--color1);
       display: block;
-      /* Ensures the button is treated as a block-level element */
       text-align: center;
-      /* Centers text inside the button */
+
+    }
+
+    .form--- .container--two {
+      width: 85%;
+      margin: 0 auto;
+      padding: 20px;
+      margin-bottom: 2em;
+
     }
 
     .form input {
-      width: 70%;
-
-
+      width: 90%;
     }
 
     .form__label_name {
       display: block;
+    }
+
+    .contact-split {
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+    }
+
+    header nav {
+      background-color: transparent;
+    }
+
+    header nav ul a {
+      display: none;
+    }
+
+  }
+
+
+  /* Media Query for Hamburger */
+  @media (min-width:786px) {
+
+    .mobile-nav {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+
     }
   }

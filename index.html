@@ -6,43 +6,55 @@
   <meta name="viewport" content="width=
   , initial-scale=1.0">
   <title>Simon Azike - Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="main.js" defer></script>
+  <script src="./JS/main.js" defer></script>
 
 </head>
 
 <body>
   <!-- Header -->
-  <header id="Home">
-    <a href="#aboutMe"> <img src="./simon2.png"></a>
+  <header id="Home" class="big_hearder">
+    <a href="#aboutMe"> <img src="./Assets/simon2.png"></a>
     <h1>Simon Azike </h1>
     <h4 class="brief-description">Creating modern and responsive websites with a focus on user experience
     </h4>
 
     <div class="title">
       <p>Web Developer | Designer | Tech Enthusiast</p>
-      <a href="#project"><button>View My Work</button></a>
+      <a href="#projects"><button>View My Work</button></a>
     </div>
-    <nav>
 
+    <nav class="nav_bar">
       <ul>
         <div class="logo--me">
           <a href="#Home"><i class="fa-solid fa-home fa-1xl"></i></a>
         </div>
         <li><a href="#Home">Home</a></li>
         <li><a href="#aboutMe">About</a></li>
-        <li><a href="#project">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contacts">Contact</a></li>
       </ul>
+      <!-- Hamburger-Menu -->
+      </div>
+      </div>
+      <button class="hamburger">
+        <div class="bar">
 
+        </div>
+      </button>
     </nav>
-
   </header>
-
+  <nav class="mobile-nav">
+    <a href="#Home">Home</a>
+    <a href="#aboutMe">About</a>
+    <a href="#projects">Project</a>
+    <a href="#skills">Skill</a>
+    <a href="#contacts">Contact</a>
+  </nav>
 
 
   <hr>
@@ -54,7 +66,9 @@
         <h2>I am Azike Simon <span>also known as SamzikTech</span>
         </h2>
         <p>
-          I'm a passionate web developer dedicated to building modern, responsive websites that offer seamless user experiences. My goal is to help clients establish a strong online presence through clean, efficient, and user-centered design.
+          I'm a passionate web developer dedicated to building modern, responsive websites that offer seamless user
+          experiences. My goal is to help clients establish a strong online presence through clean, efficient, and
+          user-centered design.
 
 
         </p>
@@ -92,51 +106,49 @@
 
 
     <!-- Project Section -->
-    <section id="project" class="project--section">
+    <section id="projects" class="project--section">
       <div class="container">
         <div class="skill-statement">
           <h2 class="project-text">My Projects</h2>
           <div class="highlights">
             <div class="highlight">
               <h3>A shopping CartPag</h3>
-              <img src="./cart.png" alt="shopping cart">
-              <a href="https://extraordinary-hamster-8d0aa9.netlify.app/">
-                <i class="fa-brands fa-square-github fa-1xl gap"></i></a>
-              <br>
-              A project developed by me at <b>CapacityBay International</b>.
+              <a href="https://extraordinary-hamster-8d0aa9.netlify.app/"> <img src="./Assets/cart.png" alt="shopping cart">
+              </a>
+              <p>
+                A project developed by me at <b>CapacityBay International</b>.
+              </p>
             </div>
+
             <div class="highlight">
               <h3>EasyBank Website</h3>
-              <img src="./project2.png" alt="Easybank LandingPage">
-              <a href="https://venerable-lily-a49440.netlify.app/">
-                <i class="fa-brands fa-square-github fa-1xl"></i></a>
-              <br>
-              A project developed by me at <b>CapacityBay International</b>.
+              <a href="https://venerable-lily-a49440.netlify.app/"> <img src="./Assets/project2.png"
+                  alt="Easybank LandingPage">
+              </a>
+              <p>
+                A project developed by me at <b>CapacityBay International</b>.
+              </p>
             </div>
+
             <div class="highlight">
               <h3>Contat Card</h3>
-              <img src="./contactcard.png" alt="A contact me card">
-              <a href="https://zingy-halva-6bea68.netlify.app/">
-                <i class="fa-brands fa-square-github fa-1xl"></i></a>
-              <br>
-
+              <a href="https://zingy-halva-6bea68.netlify.app/"> <img src="./Assets/contactcard.png" alt="A contact me card">
+              </a>
             </div>
 
             <div class="highlight">
               <h3>Sass LandingPage</h3>
-              <img src="./growth.png" alt="">
-
-              <a href="https://lighthearted-elf-499bbc.netlify.app/">
-                <i class="fa-brands fa-square-github fa-1xl"></i></a>
-              <br>
-             A project developed by <b>SamzikTech Institute of Web Design</b>.
+              <a href="https://lighthearted-elf-499bbc.netlify.app/"> <img src="./Assets/growth.png" alt=""></a>
+              <p>
+                A project developed by <b>SamzikTech Institute of Web Design</b>.
+              </p>
             </div>
           </div>
         </div>
     </section>
 
     <!-- Form -->
-    <section class="form---" id="contact">
+    <section class="form---" id="contacts">
       <div class="container--two">
         <h1 class="contact__form__text">Contact Me</h1>
         <form action="https://formspree.io/f/mbljjjeb" method="POST" class="form">
@@ -169,17 +181,18 @@
 
             <!-- social icons -->
             <div class="icons">
-              <a href="https://www.linkedin.com/in/simonzik/"><i class="fa-brands fa-linkedin fa-1xl"></i></a>
-              <a href="https://www.youtube.com/@simonazike9944"><i class="fa-brands fa-youtube fa-1xl"></i></a>
-              <a href="https://github.com/samzik234?tab=repositories"><i class="fa-brands fa-github fa-1xl"></i></a>
+              <a href="https://www.linkedin.com/in/simonzik/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+              <a href="https://www.youtube.com/@simonazike9944"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+
+              <a href="https://github.com/samzik234?tab=repositories"><i class="fa-brands fa-github fa-2xl"></i>
+              </a>
+
+              <a href="mailto:azikeshinye@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
           </ul>
-<!-- submit button -->
-<button type="submit" class="submit--btn">Submit</button>
-
+          <!-- submit button -->
+          <button type="submit" class="submit--btn">Submit</button>
       </div>
-
       </form>
-       
       </div>
     </section>
 
@@ -190,13 +203,22 @@
     <!-- foot -->
     <footer>
       <nav>
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#aboutMe">About</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="contact-split">
+          <div class="contact-left">
+            <ul>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#aboutMe">About</a></li>
+              <li><a href="#project">Projects</a></li>
+            </ul>
+          </div>
+          <div class="contact-right">
+            <ul>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <ul>
+          </div>
+        </div>
+
       </nav>
       <p>Copy right@ 2024 SamziTech
       </p>

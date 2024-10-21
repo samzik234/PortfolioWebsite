@@ -39,7 +39,6 @@ body {
     text-align: center;
     padding: 10px;
     margin-bottom: 3em;
-    /* background-color: var(--background-color); */
     opacity: 1.9;
     border-bottom-right-radius: 1em;
 
@@ -213,6 +212,38 @@ body {
     color: var(--secondary-color);
   }
 
+  .resume {
+    display: flex;
+    justify-content: center;
+    width: 9%;
+    border-radius: 8px;
+    padding: 9px;
+    margin: auto;
+
+    transition: all 0.3s ease;
+
+    background-color: var(--hoverbackground--color1);
+  }
+
+  .resume a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--secondary-color);
+
+  }
+
+  .resume:hover {
+    background-color: var(--hover--color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    transform: scale(7.5s);
+
+
+  }
+
+  .resume :active {
+    transform: scale(0.98);
+  }
 
   p {
     padding: 5px;
@@ -224,6 +255,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    margin-right: 21px;
   }
 
   /* Title section */
@@ -244,12 +276,7 @@ body {
     color: var(--secondary-color);
   }
 
-  h2 {
-    animation-delay: 60s;
-    animation: 3s ease-in-out 1s reverse infinite both running mymove;
-    color: var(--hover--color);
-    animation-duration: 4s;
-  }
+
 
   h4 {
     color: var(--secondary-color);
@@ -294,31 +321,9 @@ body {
     color: var(--primary-color)
   }
 
-  /* SkillSection Styling */
-  .skill-statement {
-    padding: 2em;
-    margin-bottom: 1em;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .skill-statement .skills-text {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 1em;
-  }
-
-  .skill-statement p {
-    font-size: 1.1rem;
-    color: #f6f6f6;
-  }
-
-  .skill-section {
-    background-color: var(--hoverbackground--color1);
-    padding: 2em;
-    margin-right: 3rem 6rem;
-  }
-
+.tittle-two{
+  color: var(--secondary-color);
+}
 
   /* The highlights */
 
@@ -559,7 +564,7 @@ body {
     .highlights {
       display: block;
       width: 296px;
-    margin: auto;
+      margin: auto;
 
 
     }
@@ -577,12 +582,7 @@ body {
 
     }
 
-    .skill-section {
-      width: 87%;
-      margin-right: 9em;
 
-
-    }
 
     p {
       font-size: 20px;
@@ -634,6 +634,30 @@ body {
       display: none;
     }
 
+    .resume {
+      width: 30%;
+      height: 30%;
+      margin: 0 auto;
+
+    }
+
+    .general-button {
+      display: flex;
+      justify-content: space-evenly;
+      margin: auto;
+      width: 100%;
+     
+
+    }
+
+    .title {
+      margin: auto;
+    }
+.resume{
+  width: 40%;
+  margin-right: 20px;
+}
+
   }
 
 
@@ -648,4 +672,10 @@ body {
       display: none;
 
     }
+
+  
+    .container {
+      margin: auto;
+    }
+    
   }

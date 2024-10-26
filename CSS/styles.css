@@ -5,8 +5,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* CSS Reset */
+*,
+::before *,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* General Body Styles */
 body {
+  overflow-x: hidden;
   margin: 0;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -110,11 +120,11 @@ body {
 
   }
 
-  .icons {
+   .icons {
     display: flex;
     margin: 1em;
 
-  }
+  } 
 
   .project-icons {
     margin-top: 1em;
@@ -187,7 +197,7 @@ body {
   /* Top Tittle button */
   .title button {
     background-color: var(--hover--color);
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     padding: 10px 20px;
     margin-bottom: 30px;
     margin: 10px;
@@ -256,6 +266,8 @@ body {
   }
 
 
+
+
   /* Project Image Styling */
   .Image img {
     width: 20%;
@@ -290,9 +302,9 @@ body {
     color: var(--primary-color)
   }
 
-.tittle-two{
-  color: var(--secondary-color);
-}
+  .tittle-two {
+    color: var(--secondary-color);
+  }
 
   /* The highlights */
 
@@ -351,6 +363,12 @@ body {
     list-style-type: none;
   }
 
+
+  .form__label_name {
+    display: block;
+  }
+
+
   form input {
     background-color: #cac5c5;
     width: 90%;
@@ -374,18 +392,14 @@ body {
 
   }
 
-  .form__label_name {
-    display: block;
-  }
-
   .submit--btn:hover {
+    transform: translateY(-10px);
     cursor: pointer;
     background-color: var(--hoverbackground--color1);
-    transition: 0.3s ease;
+    transition: 0.3s ease-out;
     outline: none;
     box-shadow: 0 0 5px var(--secondary-color);
   }
-
 
 
   /*  Footer Styles  */
@@ -558,7 +572,15 @@ body {
       font-size: 20px;
     }
 
+    footer{
+      width: 100%;
+    }
 
+  .icons{
+    display: block;
+    margin: 1em;
+   
+  }
   }
 
 
@@ -604,7 +626,7 @@ body {
       display: none;
     }
 
-    
+
   }
 
 
@@ -620,9 +642,9 @@ body {
 
     }
 
-  
+
     .container {
       margin: auto;
     }
-    
+
   }
